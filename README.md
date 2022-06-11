@@ -1,4 +1,4 @@
-# SJSX
+# SJSX - Simple JavaScript XmlDataBinding
 /*
  *  (anti)Copyright 2006 til 2022 SJSX - Simple JavaScript Xmldatabinding
  *
