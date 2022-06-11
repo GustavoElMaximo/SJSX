@@ -1,0 +1,5 @@
+	if (this.&CLASSCHILDVAR.actualizeXMLDoc){
+		this.&CLASSCHILDVAR.actualizeXMLDoc();
+	}
+	dupNode = this.&CLASSCHILDVAR.xmlObj.xmlDoc.firstChild.cloneNode(true);
+	this.xmlObj.xmlDoc.firstChild.appendChild(dupNode);

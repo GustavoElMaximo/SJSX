@@ -1,0 +1,36 @@
+// **********************************************
+// Class &CHILDCLASS
+// **********************************************
+
+/* Create */
+function &CHILDCLASS(xmlText) {
+	if (xmlText==null || xmlText==''){
+		xmlText = '&CHILDELEMENT';
+	}
+	this.xmlObj = new XmlObject(xmlText);
+}
+
+/* Properties, getters an d setters */
+&CHILDCLASS.prototype.getValue = function() {
+	if (W3CComp) {
+		return this.xmlObj.xmlDoc.firstChild.textContent;
+	} else {
+		return this.xmlObj.xmlDoc.firstChild.text;
+	}
+} 
+
+&CHILDCLASS.prototype.setValue = function(txtValue) {
+	if (W3CComp) {
+	  	this.xmlObj.xmlDoc.firstChild.textContent = txtValue;
+	} else {
+		this.xmlObj.xmlDoc.firstChild.text = txtValue;
+	}
+}
+
+&CHILDCLASS.prototype.getAttribute = function(attName) {
+	return this.xmlObj.xmlDoc.firstChild.getAttribute(attName);
+} 
+
+&CHILDCLASS.prototype.setAttribute = function(attName, txtValue) {
+  	this.xmlObj.xmlDoc.firstChild.setAttribute(attName, txtValue);
+}

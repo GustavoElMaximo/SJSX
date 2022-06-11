@@ -1,0 +1,1 @@
+	this.&CLASSCHILDVAR = new &CLASSCHILD(extractXmlText(this.xmlObj.xmlDoc.getElementsByTagName('&CHILDNODENAME')[0]));	

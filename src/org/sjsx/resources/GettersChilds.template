@@ -1,0 +1,3 @@
+&ROOTCLASS.prototype.get&CHILDELEMENT = function() {
+	return this.&CLASSCHILDVAR;
+} 

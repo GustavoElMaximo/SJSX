@@ -1,0 +1,1 @@
+- generate the attributes automatically when a SJSX xml object is created from a xml

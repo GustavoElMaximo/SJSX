@@ -1,0 +1,5 @@
+version 0.0.2 beta
+- linux script compiler
+- create a SJSX xml object from a xml string
+- add SJSX_ to name of principal class to avoid concurrency problems
+- solved any other issues

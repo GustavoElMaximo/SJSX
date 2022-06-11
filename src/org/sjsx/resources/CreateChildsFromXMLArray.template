@@ -1,0 +1,5 @@
+	this.&CLASSCHILDVAR = new Array();
+	for (i = 0; i < this.xmlObj.xmlDoc.getElementsByTagName('&CHILDNODENAME').length; i++) {
+		var &CLASSCHILDVAR = new &CLASSCHILD(extractXmlText(this.xmlObj.xmlDoc.getElementsByTagName('&CHILDNODENAME')[i]));
+		this.add&CLASSCHILD(&CLASSCHILDVAR);
+	}

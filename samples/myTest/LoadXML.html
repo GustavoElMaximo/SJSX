@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Insert title here</title>
+	
+	<!-- SJSX -->
+    <script type="text/javascript" src="SJSX_xmlTools.js"></script>
+    <script type="text/javascript" src="MyGenJSFromXSD.js"></script>
+    <script type="text/javascript" src="LoadXML.js"></script>
+	
+</head>
+<body>
+<textarea id="xmlIn" name="xmlIn" rows="20" cols="60" readonly><?xml version="1.0" encoding="UTF-8"?>
+<xml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MyXML.xsd">
+	<codigoCliente>00001</codigoCliente>
+	<codigoAgencia>3424241234</codigoAgencia>
+	<datosAgencia>
+		<nombre>V. FORMACION</nombre>
+		<direccion>AG.FICTICIA FORMACION</direccion>
+		<via>CL</via>
+		<numero>S/N</numero>
+		<piso/>
+		<telefono>166666666</telefono>
+		<poblacion>PALMA DE MALLORCA</poblacion>
+		<cp>07000</cp>
+		<categoriaAgencia>A</categoriaAgencia>
+		<email>yo@sjsx.com</email>
+	</datosAgencia>
+	<productos>
+		<producto>
+			<codigo>EWQR</codigo>
+			<cantidad>0020</cantidad>
+		</producto>
+		<producto>
+			<codigo>EWQRE</codigo>
+			<cantidad>0010</cantidad>
+		</producto>
+		<producto>
+			<codigo>MECSL$</codigo>
+			<cantidad>0001</cantidad>
+		</producto>
+	</productos>
+</xml>
+</textarea>
+<br />
+<button onclick="testThis(document.getElementById('xmlIn').value);">test this!</button>
+<br />
+<input type="text" id="value1" /> Value from a single object that represent a node 
+<br />
+<textarea id="area" name="area" rows="20" cols="60"></textarea>
+</body>
+</html>

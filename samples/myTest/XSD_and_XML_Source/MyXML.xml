@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="MyXML.xsd">
+	<codigoCliente>00001</codigoCliente>
+	<codigoAgencia>3424241234</codigoAgencia>
+	<datosAgencia>
+		<nombre>V. FORMACION</nombre>
+		<direccion>AG.FICTICIA FORMACION</direccion>
+		<via>CL</via>
+		<numero>S/N</numero>
+		<piso/>
+		<telefono>166666666</telefono>
+		<poblacion>PALMA DE MALLORCA</poblacion>
+		<cp>07000</cp>
+		<categoriaAgencia>A</categoriaAgencia>
+		<email>yo@sjsx.com</email>
+	</datosAgencia>
+	<productos>
+		<producto>
+			<codigo>EWQR</codigo>
+			<cantidad>0020</cantidad>
+		</producto>
+		<producto>
+			<codigo>EWQRE</codigo>
+			<cantidad>0010</cantidad>
+		</producto>
+		<producto>
+			<codigo>MECSL$</codigo>
+			<cantidad>0001</cantidad>
+		</producto>
+	</productos>
+</xml>

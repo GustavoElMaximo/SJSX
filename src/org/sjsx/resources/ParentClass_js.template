@@ -1,0 +1,74 @@
+// **********************************************
+// Class &ROOTCLASS
+// **********************************************
+
+function &ROOTCLASS(xmlText) {
+	
+	var _xmlText = xmlText; 
+	
+	if (_xmlText==null || _xmlText==''){
+		_xmlText = '&ROOTELEMENT';
+	}
+
+    /* Create */
+	this.xmlObj = new XmlObject(_xmlText, '&XMLVERSION', '&XMLENCODING');
+	
+    /* Create of child elements*/
+	if (xmlText==null || xmlText==''){
+    	&CREATECHILDS
+    } else {
+    	&CREATEFROMXMLCHILDS
+    }
+
+}
+
+/* Properties, getters and setters */
+&ROOTCLASS.prototype.getXml = function() {
+	this.actualizeXMLDoc();
+	str = this.xmlObj.getXmlText(true);
+	return str;
+} 
+
+&ROOTCLASS.prototype.actualizeXMLDoc = function() {
+	var dupNode;
+	cleanElement(this.xmlObj.xmlDoc.firstChild);
+	
+	&ACTUALIZEXML
+} 
+
+&ROOTCLASS.prototype.getAttribute = function(attName) {
+	return this.xmlObj.xmlDoc.firstChild.getAttribute(attName);
+} 
+
+&ROOTCLASS.prototype.setAttribute = function(attName, txtValue) {
+	this.xmlObj.xmlDoc.firstChild.setAttribute(attName, txtValue);
+}
+
+&ROOTCLASS.prototype.getXmlObj = function() {
+	try {
+		return this.xmlObj;
+	} catch (e) {
+    	throw e;
+	}
+} 
+
+&ROOTCLASS.prototype.length = function() {
+	try {
+		return this.xmlObj.xmlDoc.firstChild.childNodes.length;
+	} catch (e) {
+    	throw e;
+	}
+} 
+
+&ROOTCLASS.prototype.childs = function() {
+	try {
+		return this.xmlObj.xmlDoc.firstChild.childNodes;
+	} catch (e) {
+    	throw e;
+	}
+} 
+
+/* getters of childs */
+&GETTERSCHILDS
+
+&ADDREMOVECHILDS

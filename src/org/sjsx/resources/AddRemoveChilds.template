@@ -1,0 +1,8 @@
+/* add and remove childs elements */
+&ROOTCLASS.prototype.add&CHILDELEMENT = function(&CLASSCHILDVAR) {
+	this.&CLASSCHILDVAR[this.&CLASSCHILDVAR.length] = &CLASSCHILDVAR;
+} 
+
+&ROOTCLASS.prototype.remove&CHILDELEMENT = function(id) {
+	this.&CLASSCHILDVAR[id] = null;
+} 

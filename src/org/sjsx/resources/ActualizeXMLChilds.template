@@ -1,0 +1,11 @@
+	for (i in this.&CLASSCHILDVAR) {
+		if (this.&CLASSCHILDVAR[i].actualizeXMLDoc){
+			this.&CLASSCHILDVAR[i].actualizeXMLDoc();
+		}
+		if (this.&CLASSCHILDVAR[i].xmlObj) {
+			dupNode = this.&CLASSCHILDVAR[i].xmlObj.xmlDoc.firstChild.cloneNode(true);
+			if (dupNode) {
+				this.xmlObj.xmlDoc.firstChild.appendChild(dupNode);
+			}
+		}
+	}
